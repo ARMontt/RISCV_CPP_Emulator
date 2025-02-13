@@ -1,4 +1,6 @@
 #include<iostream>
+#include "dram.h"
+#include "bus.h"
 
 using namespace std;
 
