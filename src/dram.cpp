@@ -1,6 +1,17 @@
+/**
+  ******************************************************************************
+  * @file           : dram.cpp
+  * @brief          : DRAM Library - Source Code
+  * @author         : Alan R. Montt @ OpenDoDo
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 OpenDoDo
+  * All rights reserved.
+  *
+  ******************************************************************************
+  */
 #include "dram.h"
-
-
 
 uint64_t DRAM::dram_load_8(DRAM* dram, uint64_t addr){
 	return (uint64_t) dram->mem[addr - DRAM_BASE];
@@ -52,6 +63,7 @@ void DRAM::dram_store(DRAM* dram, uint64_t addr, uint64_t size, uint64_t value){
 		default:;
 	}
 };
+
 void DRAM::dram_store_8(DRAM* dram, uint64_t addr, uint64_t value){
 	dram->mem[addr-DRAM_BASE] = (uint8_t) (value & 0xff);
 }
