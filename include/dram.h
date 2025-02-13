@@ -1,3 +1,18 @@
+/**
+  ******************************************************************************
+  * @file           : dram.h
+  * @brief          : DRAM Library - Header File
+  * @author         : Alan R. Montt @ OpenDoDo
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 OpenDoDo.
+  * All rights reserved.
+  *
+  ******************************************************************************
+  */
+#pragma once
+
 #include<cstdint>
 
 #define DRAM_SIZE 1024*1024*1 //1 MiB = 1 048 576 Bytes
