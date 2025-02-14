@@ -1,3 +1,18 @@
+
+/**
+  ******************************************************************************
+  * @file           : bus.h
+  * @brief          : BUS Library - Header File
+  * @author         : Alan R. Montt @ OpenDoDo
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 OpenDoDo.
+  * All rights reserved.
+  *
+  ******************************************************************************
+  */
+
 #pragma once
 #include<cstdint>
 #include "dram.h"
