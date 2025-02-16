@@ -1,3 +1,18 @@
+
+/**
+  ******************************************************************************
+  * @file           : bus.cpp
+  * @brief          : BUS Library - Source Code
+  * @author         : Alan R. Montt @ OpenDoDo
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 OpenDoDo.
+  * All rights reserved.
+  *
+  ******************************************************************************
+  */
+
 #include "bus.h"
 
 uint64_t BUS::bus_load(BUS* bus, uint64_t addr, uint64_t size){
