@@ -3,7 +3,7 @@
 CXX = g++
 
 #Compiler Flags
-CXXFLAGS = -Wall -Wextra -Iinclude
+CXXFLAGS = -Wall -Wextra -Iinclude -g
 
 #Source Files
 SRC = $(wildcard src/*.cpp) main.cpp
@@ -29,6 +29,10 @@ run: $(TARGET)
 clean:
 	rm -f $(OBJ) $(TARGET)
 
+#Debug command
+debug: $(TARGET)
+	gdb $(TARGET)
+
 #Phony targets
 
-.PHONY: clean run
+.PHONY: clean run debug
