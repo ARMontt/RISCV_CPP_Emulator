@@ -22,7 +22,9 @@ class I_Inst{
     uint64_t funct3   = (uint64_t)  ((i_inst>>12) &0x07);
     uint64_t rs1      = (uint64_t)  ((i_inst>>15) &0x1F);
     uint64_t imm11_0  = (uint64_t)  ((i_inst>>20) &0x0FFF; //inst[31:20] = imm[11:0]
-    uint64_t imm = imm11_0;	
+
+    uint64_t get_IMM(I_Inst* inst);
+    uint64_t get_SHAMT(I_Inst* inst);
 };
 
 
