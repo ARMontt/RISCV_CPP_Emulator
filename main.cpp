@@ -1,6 +1,5 @@
 #include<iostream>
-#include "dram.h"
-#include "bus.h"
+#include "cpu.h"
 
 using namespace std;
 

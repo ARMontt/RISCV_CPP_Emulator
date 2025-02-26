@@ -27,6 +27,7 @@ run: $(TARGET)
 
 #Clean rule to remove compiled files
 clean:
+	@echo "Removing: $(OBJ) $(TARGET)"
 	rm -f $(OBJ) $(TARGET)
 
 #Debug command

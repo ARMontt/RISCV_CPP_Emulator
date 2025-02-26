@@ -1,5 +1,31 @@
+/**
+  ******************************************************************************
+  * @file           : instructions.h
+  * @brief          : Instruction Library - Header File
+  * @author         : Alan R. Montt @ ARMontt
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 ARMontt.
+  * All rights reserved.
+  *
+  ******************************************************************************
+  */
 #pragma once
 #include<cstdint>
+
+#define I_Type 0x13
+	#define ADDI	0x0
+	#define SLLI	0x1
+	#define SLTI	0x2
+	#define SLTIU	0x3
+	#define XORI	0x4
+	#define SRI	0x5
+		#define SRLI	0x00
+		#define SRAI	0x20
+	#define ORI	0x6
+	#define ANDI	0x7
+
 
 class R_Inst{
   public:

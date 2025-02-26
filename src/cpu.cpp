@@ -19,3 +19,11 @@ uint64_t CPU::cpu_load(CPU* cpu, uint64_t addr, uint64_t size){
 void CPU::cpu_store(CPU* cpu, uint64_t addr, uint64_t size, uint64_t value){
   bus.bus_store(&(cpu->bus), addr, size, value);
 }
+
+int cpu_execute(CPU* cpu, uint32_t inst){
+  int opcode = inst & 0x7f;
+  int funct3 = (inst >> 12) & 0x7;
+  int funct7 = (inst >> 25) & 0x7f;
+
+  cpu->regs[0] = 0;
+}

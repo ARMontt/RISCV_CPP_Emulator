@@ -2,11 +2,11 @@
   ******************************************************************************
   * @file           : dram.h
   * @brief          : DRAM Library - Header File
-  * @author         : Alan R. Montt @ OpenDoDo
+  * @author         : Alan R. Montt @ ARMontt
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2025 OpenDoDo.
+  * Copyright (c) 2025 ARMontt.
   * All rights reserved.
   *
   ******************************************************************************
