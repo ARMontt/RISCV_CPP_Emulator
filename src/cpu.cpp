@@ -26,4 +26,8 @@ int cpu_execute(CPU* cpu, uint32_t inst){
   int funct7 = (inst >> 25) & 0x7f;
 
   cpu->regs[0] = 0;
+
+ 
 }
+
+

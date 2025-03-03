@@ -14,18 +14,67 @@
 #pragma once
 #include<cstdint>
 
-#define I_Type 0x13
+/*
+*
+* The following OPCODES were obtained through "github.com/fmash16/riscv_emulator" 
+* and the document RISC-V Reference available online from CS295 Simon Fraser University
+*
+*/
+
+#define LUI 		0x37
+#define AUIPC 		0x17
+
+#define JAL 		0x6F
+#define JALR 		0x67
+
+#define B_TYPE 		0x63 /*0110 0011*/
+	#define BEQ	0x0
+	#define BNE	0x1
+	#define BLT	0x4
+	#define BGE	0x5
+	#define BLTU	0x6
+	#define BGEU	0x7
+
+#define LOAD 		0x03 /*0000 0011*/
+	#define LB	0x0
+	#define LH	0x1
+	#define LW	0x2
+	#define LD	0x3
+	#define LBU	0x4
+	#define LHU	0x5
+	#define LWU	0x6
+
+#define S_TYPE		0x23 /*0010 0011*/
+	#define SB	0x0
+	#define SH	0x1
+	#define SW	0x2
+	#define SD	0x3
+
+#define I_TYPE 		0x13 /*0001 0011*/
 	#define ADDI	0x0
 	#define SLLI	0x1
 	#define SLTI	0x2
 	#define SLTIU	0x3
 	#define XORI	0x4
 	#define SRI	0x5
-		#define SRLI	0x00
-		#define SRAI	0x20
+		#define SRLI	0x00	/*FUNCT7 value*/
+		#define SRAI	0x20	/*FUNCT7 value*/
 	#define ORI	0x6
 	#define ANDI	0x7
 
+#define R_TYPE		0x33 /*0011 0011*/
+	#define ADD	0x0
+	#define SUB	0x0
+	#define SLL	0x1
+	#define SLT	0x2
+	#define SLTU	0x3
+	#define XOR	0x4
+	#define SR	0x5
+		#define SRA 	0x20	/*FUNCT7 value*/
+		#define SRL	0x00	/*FUNCT7 value*/
+	#define OR	0x6
+	#define AND	0x7
+ 
 
 class R_Inst{
   public:
