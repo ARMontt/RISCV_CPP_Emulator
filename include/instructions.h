@@ -75,6 +75,50 @@
 	#define OR	0x6
 	#define AND	0x7
  
+#define FENCE   0x0f
+
+#define I_TYPE_64 0x1b
+  #define ADDIW 0x0
+  #define SLLIW 0x1
+  #define SRIW  0x5
+    #define SRLIW 0x00
+    #define SRAIW 0x20
+
+#define R_TYPE_64 0x3b
+  #define ADDSUB  0x0
+    #define ADDW  0x00
+    #define MULW  0x01
+    #define SUBW  0x20
+  #define DIVW    0x4
+  #define SLLW    0x1
+  #define SRW     0x5
+    #define SRLW  0x00
+    #define DIVUW 0x01
+    #define SRAW  0x20
+  #define REMW    0x6
+  #define REMUW   0x7
+
+#define CSR   0x73
+  #define ECALLBREAK  0x00
+  #define CSRRW   0x01
+  #define CSRRS   0x02
+  #define CSRRC   0x03
+  #define CSRRWI  0x05
+  #define CSRRSI  0x06
+  #define CSRRCI  0x07
+
+#define AMO_W   0x02f
+  #define LR_W    0x02
+  #define SC_W    0x03
+  #define AMOSWAP_W 0x01
+  #define AMOADD_W  0x00
+  #define AMOXOR_W  0x04
+  #define AMOAND_W  0x0c
+  #define AMOOR_W   0x08
+  #define AMOMIN_W  0x10
+  #define AMOMAX_W  0x14
+  #define AMOMINU_W 0x18
+  #define AMOMAXU_W 0x1c
 
 class R_Inst{
   public:
